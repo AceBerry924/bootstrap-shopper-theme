@@ -278,6 +278,6 @@ select:focus {
     width: 5%;
   }
   footer .col-lg-4 img.rounded {
-    width: 30.5%;
+    width: calc(33.3% - .5rem);
   }
 }
