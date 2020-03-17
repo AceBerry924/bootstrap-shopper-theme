@@ -244,13 +244,40 @@ select:focus {
   }
   .call-to-action,
   .text-right {
+    text-align: center !important;
+  }
+  .carousel-inner .col-lg-4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .carousel-inner .col-lg-6 {
     text-align: center;
+    padding-top: 20px;
+  }
+  .carousel-inner blockquote {
+    width: 80%;
+    margin-left: 10%;
   }
 }
 
 @media (max-width: 500px) {
+  .navbar-toggler-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  button.navbar-toggler:focus {
+    outline: none !important;
+  }
   .gallery {
     column-count: 1;
     column-width: 100%;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    width: 5%;
+  }
+  footer .col-lg-4 img.rounded {
+    width: 30.5%;
   }
 }
