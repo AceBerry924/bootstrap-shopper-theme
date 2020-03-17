@@ -232,14 +232,25 @@ select:focus {
     Responsive
 ***************************/
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
+  .navbar .nav {
+    background-color: #FEFFFE;
+  }
   .navbar .nav-item {
     display: block;
     width: 100%;
     padding: 10px 0;
     text-align: center;
   }
-  .navbar .nav {
-    
+  .call-to-action,
+  .text-right {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .gallery {
+    column-count: 1;
+    column-width: 100%;
   }
 }
